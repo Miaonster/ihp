@@ -1,0 +1,44 @@
+body {
+    background: #cae6f3 none no-repeat center top;
+    Helvetica, Arial, sans-serif;
+    font-size:
+    16px;
+    color:
+    #333;
+}
+
+input {
+}
+
+a {
+    color: #333;
+}
+
+/*label, .button{font-family: Copperplate;}*/
+#wrapper {
+    background: #cae6f3 url('icons/fade.jpg') no-repeat center top;
+    text-align: center;
+	display:none;height:100%;overflow:hidden;width:100%;
+}
+#footer{position:absolute;bottom:0;right:0;color:#fff;display:none;}
+
+#wrapper div {
+    padding: 5px;
+}
+
+#main, #progress, #message, #invalid_login {
+    display: none;
+}
+
+/*#main, #login_items{text-transform: uppercase;}
+ * */
+.inputlbl {
+    width: 150px;
+    display: block;
+    float: left;
+    text-align: right;
+}
+a.drive_letters{padding:5px; background:#ccc;}
+a .selected{background-color:#f00,
+            color:#fff,
+            cursor:inherit;}
