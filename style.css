@@ -38,7 +38,8 @@ a {
     float: left;
     text-align: right;
 }
-a.drive_letters{padding:5px; background:#ccc;}
-a .selected{background-color:#f00,
+a.drive_letters{padding:5px; background:#cae6f3;}
+a.drive_letters:hover{color:#fff;background-color:#f00;text-decoration:none;}
+a.selected{background-color:#f00,
             color:#fff,
             cursor:inherit;}
