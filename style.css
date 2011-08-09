@@ -1,10 +1,8 @@
 body {
-    background: #cae6f3 none no-repeat center top;
+    background: #075788 none no-repeat center top;
     Helvetica, Arial, sans-serif;
-    font-size:
-    16px;
-    color:
-    #333;
+    font-size:13px;
+    color:    #333;
 }
 
 input {
@@ -16,12 +14,12 @@ a {
 
 /*label, .button{font-family: Copperplate;}*/
 #wrapper {
-    background: #cae6f3 url('icons/fade.jpg') no-repeat center top;
+    background: #075788 url('icons/fade2.jpg') no-repeat center top;
     text-align: center;
 	display:none;height:100%;overflow:hidden;width:100%;
 }
-#footer{position:absolute;bottom:0;right:0;color:#fff;display:none;}
-
+#footer{position:absolute;bottom:0px;right:0;color:#fff;display:none;}
+#login_items{padding-top:100px;}
 #wrapper div {
     padding: 5px;
 }

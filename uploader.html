@@ -1,78 +1,87 @@
 <html>
-    <head>
-        <title>IDC</title>
-        <link href="style.css" rel="stylesheet" type="text/css"/>
+	<head>
+		<title>IDC</title>
+		<link href="style.css" rel="stylesheet" type="text/css"/>
 		<link href="lib/air/colorbox.css" rel="stylesheet" type="text/css"/>
-        <script type="text/javascript" src="lib/air/AIRAliases.js"></script>
-        <script type="text/javascript" src="lib/air/AIRIntrospector.js"></script>
+		<script type="text/javascript" src="lib/air/AIRAliases.js"></script>
+		<script type="text/javascript" src="lib/air/AIRIntrospector.js"></script>
 		<script src="lib/air/applicationUpdater.swf" type="application/x-shockwave-flash"/>
 		<script src="lib/air/applicationupdater_ui.swf" type="application/x-shockwave-flash"/>
+		<script src="lib/air/aircore.swf" type="application/x-shockwave-flash"/>
 		<script type="text/javascript" src="lib/air/jquery.js"></script>
 		<script type="text/javascript" src="lib/air/jquery.colorbox.js"></script>
 		<script type="text/javascript" src="lib/air/logic.js"></script>
-        
-    </head>
-    <body onload="doLoad();">
-        
-        <div id="wrapper">
-            
-            <img src="icons/IDC-logo.jpg" width="400" height="97" alt="IDC Logo"/>
-        	<div id="main">
-        		<div style="font-size:12px;padding: 20px; 10px;">
-        			Insert your LFC/IHP USB drive into your computer. Press Select USB Drive and browse to where you can highlight/select this USB drive, named LFC/IHP, then press OK. 
-					<br/><small>(In Windows, this is usually drive E, F, or G, <br />but it could be letters above that.)</small>
-        		</div>
-				
-        	   	<input id="upload" type="button" value="Select USB Drive" class="button"/>
-        	   	<input id="signout" type="button" value="Sign Out" class="button"/>
-				
-			   <!--<input id="exit1" type="button" value="Exit" class="button"></input>-->
-        	</div><!-- #main -->
-        		
-        	
-            <div id="login_items">
-            	
-                <div>
-                    <label class="inputlbl" for="username">Your Last Name:</label>
-                    <input id="username" type="text" class="textb" />
-                </div>	
-                
-                <div >
-                    <label class="inputlbl" for="password">Password:</label> 
-                    <input id="password" type="password" class="textb" />
-                </div>	
-                
-                <div>
-                    <input id="remember" type="checkbox" />
-                    <label for="remember">Remember Me</label> 
-            	</div>	
-            	
-            	<div>
-            	   <input id="signin" type="button" value="Sign In" class="button" />
-				   <input id="exit" type="button" value="Exit" class="button"></input>
-            	</div>
-            	
-            	
-            </div><!-- #login_items -->
-			<div id="message">...</div>
-			<div id="progress"><img src="icons/loading.gif" alt="loading" width="43" height="11" /></div>
-        	<div id="invalid_login">
-        	   Invalid Username and Password! 
-        	   <br/>
-        	   Please Try Again or Click <a id="reminder_link" href="#">here</a> for reminder.
-            </div>
+	</head>
+	<body onload="doLoad();">
+		<div id="wrapper">
+			<br/><br/><br/><br/><br/>
+			<div id="main">
+				<div id="instructions">
+					Searching for files...
+					<!--Make sure your USB drive is inserted in your computer. Press Select USB Drive. Click on the drive name that corresponds to your USB drive.-->
+					<!--Insert your LFC/IHP USB drive into your computer. Press Select USB Drive and browse to where you can highlight/select this USB drive, named LFC/IHP, then press OK. 
+					<br/>
+					<small>
+						(In Windows, this is usually drive E, F, or G, 
+						<br/>
+						but it could be letters above that.)
+					</small>-->
+				</div>
+				<input id="upload" type="button" value="Select USB Drive" class="button"/>
+				<input id="signout" type="button" value="Sign Out" class="button"/>
+			</div><!-- #main -->
+			<div id="login_items">
+				<div>
+					Insert your USB drive into your computer, then sign in
+				</div>
+				<div>
+					<label class="inputlbl" for="username">
+						Your Last Name:
+					</label>
+					<input id="username" type="text" class="textb" />
+				</div>
+				<div>
+					<label class="inputlbl" for="password">
+						Password:
+					</label>
+					<input id="password" type="password" class="textb" />
+				</div>
+				<div>
+					<input id="remember" type="checkbox" />
+					<label for="remember">
+						Remember Me
+					</label>
+				</div>
+				<div>
+					<input id="signin" type="button" value="Sign In" class="button" />
+					<input id="exit" type="button" value="Exit" class="button" />
+				</div>
+			</div><!-- #login_items -->
+			<div id="task">
+			</div>
+			<div id="message">
+				...
+			</div>
+			<div id="progress">
+				<img src="icons/loading.gif" alt="loading" width="43" height="11" />
+			</div>
+			<div id="invalid_login">
+				Invalid Username and Password! 
+				<br/>
+				Please Try Again or Click <a id="reminder_link" href="#">here</a>
+				for reminder.
+			</div>
 			<div style="display:none">
 				<div id="file_list" style="padding:10px; background:#fff;">
-					
-					<p>these are the drives i found</p>
-					
+					<p>
+						
+					</p>
 				</div>
 			</div>
-        </div><!--#wrapper-->
-		
-        <div id="footer">
-        	<img src="icons/beta.jpg" width="133" height="15" alt="Beta Version" />
-			v1.5.5.2
 		</div>
-    </body>
+		<!--#wrapper-->
+		<div id="footer" style="color:#ccc;">
+			3.3.0
+		</div>
+	</body>
 </html>
