@@ -24,10 +24,10 @@
 	<name>IHP Data Communicator</name>
 
 	<!-- An application version designator (such as "v1", "2.5", or "Alpha 1"). Required. -->
-	<versionNumber>3.3.0</versionNumber>
+	<versionNumber>3.3.1</versionNumber>
 
     <!-- A string value (such as "v1", "2.5", or "Alpha 1") that represents the version of the application, as it should be shown to users. Optional. -->
-    <versionLabel>3.3.0</versionLabel>
+    <versionLabel>3.3.1</versionLabel>
 	
 	<!-- Description, displayed in the AIR application installer. Optional. -->
 	<description/>
